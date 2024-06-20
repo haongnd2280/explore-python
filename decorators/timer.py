@@ -15,3 +15,20 @@ def timer(func):
         return result
     
     return wrapper
+
+@timer
+def fibonacci_list(n):
+    """Compute the nth fibonacci number using list.
+    """
+
+    numbers = []     # a list to store all fibonacci numbers along the way
+    a, b = 0, 1
+    while len(numbers) < n:
+        numbers.append(a)
+        a, b = b, a + b
+
+    return numbers[-1]
+
+
+if __name__ == '__main__':
+    result = fibonacci_list(100_000)
