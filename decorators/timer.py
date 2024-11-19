@@ -11,7 +11,7 @@ def timer(func):
         result = func(*args, **kwargs)
         end = time.time()
 
-        print(f'@Timer: {func.__name__}. Execution time: {(end - start) * 1000} ms.')
+        print(f'@timer. {func.__name__}. Execution time: {(end - start) * 1000} ms.')
         return result
     
     return wrapper
