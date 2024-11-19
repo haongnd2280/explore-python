@@ -1,0 +1,5 @@
+18/11/2024 11:47:05 root            INFO     Info message from root logger.
+18/11/2024 11:47:05 use_case3.area1 DEBUG    Debug message from logger1.
+18/11/2024 11:47:05 use_case3.area1 INFO     Info message from logger1.
+18/11/2024 11:47:05 use_case3.area2 WARNING  Warning message from logger2.
+18/11/2024 11:47:05 use_case3.area2 ERROR    Error message from logger2.

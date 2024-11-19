@@ -1,0 +1,11 @@
+2024-11-18 01:33:06,809 - spam_app - INFO - Create an instance of auxiliary_module.Auxiliary
+2024-11-18 01:33:06,809 - spam_app.auxiliary.Auxiliary - INFO - Create an instance of Auxiliary
+2024-11-18 01:33:06,809 - spam_app - INFO - Done creating an instance of auxiliary_module.Auxiliary
+2024-11-18 01:33:06,809 - spam_app - INFO - Calling auxiliary_module.Auxiliary.do_something
+2024-11-18 01:33:06,809 - spam_app.auxiliary.Auxiliary - INFO - Do something
+2024-11-18 01:33:06,809 - spam_app.auxiliary.Auxiliary - INFO - Done doing something
+2024-11-18 01:33:06,809 - spam_app - INFO - Finished auxiliary_module.Auxiliary.do_something
+2024-11-18 01:33:06,809 - spam_app - INFO - Calling auxiliary_module.some_function()
+2024-11-18 01:33:06,809 - spam_app.auxiliary - INFO - Received a call to 'some_function'
+2024-11-18 01:33:06,809 - spam_app - INFO - Done with auxiliary_module.some_function()
+2024-11-18 01:33:06,809 - spam_app - ERROR - This error is logged to both file and console.

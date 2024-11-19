@@ -1,0 +1,5 @@
+2024-11-18 10:59:09,334 - use_case2 - DEBUG - Debug message
+2024-11-18 10:59:09,334 - use_case2 - INFO - Info message
+2024-11-18 10:59:09,334 - use_case2 - WARNING - Warning message
+2024-11-18 10:59:09,334 - use_case2 - ERROR - Error message
+2024-11-18 10:59:09,334 - use_case2 - CRITICAL - Critical message
