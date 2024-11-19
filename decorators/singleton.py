@@ -2,12 +2,16 @@
 If a class already has an instance, if we initialize that class again, it will not be initialized (regardless of the same of diff init parameters).
 """
 
+from functools import wraps
+
+
 def singleton(cls_):
     """Accept a class definition instead of a function definition.
     """
 
     instances = {}
 
+    @wraps(cls_)
     def get_instance(*args, **kwargs):
         """The arguments is for the __init__ method of the class.
         """
@@ -32,6 +36,8 @@ if __name__ == "__main__":
     print(db1 is db2)                  # (compare the identity) True 
     print(db1.connection_string)       # mysql://user:password@localhost/db
     print(db2.connection_string)       # still MySQL
+
+    print(db1.__doc__)
 
 
 
