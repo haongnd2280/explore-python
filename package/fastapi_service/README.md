@@ -9,17 +9,26 @@
 
 3. Configure `pyproject.toml`
 ```
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
 [project]
 name = "fastapi-service"
 version = "0.1.0"
-dependencies = ["fastapi", "uvicorn"]
+description = "My first FastAPI service package"
+readme = "README.md"
+authors = [
+    { name = "haongnd2280", email = "hao.ngnd2285@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn"
+]
 
 [project.scripts]
-fastapi-service = "fastapi_service.main:start"
+fastapi-service = "fastapi_service.main:start"      # Register `fastapi-service` as a CLI command
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 ```
 
 4. Test the package
